@@ -27,19 +27,7 @@ document.addEventListener("click", function(e) {
     let sharableLink = shareLink.contains(e.target);
     let socialIcons = socialMediaSection.contains(e.target);
 
-    if (!shownTargetSection) {
-        removeHiddenSection();
-    }
-
-    if (!targetSection) {
-        removeHiddenSection();
-    }
-
-    if (!sharableLink) {
-        removeHiddenSection();
-    }
-
-    if (!socialIcons) {
+    if (!targetSection && !shownTargetSection && !sharableLink && !socialIcons) {
         removeHiddenSection();
     }
 
